@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    color: white;
+    height: 10hv;
+}
+.side_bar{
+    width: 20%;
+    /* background-color: rgb(58, 148, 233); */
+    height: 100vh;
+}
+.side_menu{
+  padding: 20px;
+  font-size: 1rem;
+}
+.items{
+    padding: 20px;
+}
+.fa-solid{
+    margin-right: 10px;
+}
+.items h2{
+    font-family: Style Script;
+    font-size: 3rem;
+}
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.img img{
+    /* object-fit: contain; */
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    border: 2px solid red;
+}
+.post_stories{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+
+}
+.instagram{
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+.post_section{
+    width: 60%;
+}
+.suggestion{
+    width: 20%;
+}
