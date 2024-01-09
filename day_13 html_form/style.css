@@ -1,0 +1,34 @@
+
+.head{
+    width: 100%;
+    height: 50px;
+    /* color: white; */
+    border-bottom: 2px solid gray;
+    text-align: center;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    width: 50%;
+}
+.area,.name,.class,.email,.password,.datetime,.date,.select,.submit{
+    margin-top:30px;
+    gap: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.sidebox{
+    width: 25%;
+    background-color: rgb(9, 14, 12);
+    color: aliceblue;
+}
+.rightbox{
+    background-color: rgb(8, 20, 16);
+    width: 25%;
+}
+.container{
+    display: flex;
+}
