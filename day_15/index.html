@@ -32,7 +32,7 @@
             height: 300px;
             width: 200px;
             border-radius: 5%;
-            
+            z-index: 1;
         }
         .inside_img{
             display: flex;
@@ -82,17 +82,24 @@
     width: 100%;
     padding: 20px;
     background-color: brown;
-    /* position: sticky;
-    top: 0px;
-    left: 10px; */
+
 }
 .nav_parent{
     position: sticky;
     top: 0px;
+    z-index: 100;
 }
     </style>
 </head>
 <body>
+    <div class="nav_parent">
+        <div class="navbar">
+            <div class="item">Home</div>
+            <div class="item">About</div>
+            <div class="item">Teams</div>
+            <div class="item">Contacts</div>
+        </div>
+    </div>
     <div class="section1">
     <div class="main_img">
         <img src="https://cdn.pixabay.com/photo/2018/04/05/09/32/portrait-3292287_640.jpg" alt="">
@@ -131,14 +138,7 @@
         </div>
     </div>
 </div>
-<div class="nav_parent">
-    <div class="navbar">
-        <div class="item">Home</div>
-        <div class="item">About</div>
-        <div class="item">Teams</div>
-        <div class="item">Contacts</div>
-    </div>
-</div>
+
 <section class="section2">
     <div class="box"></div>
     
