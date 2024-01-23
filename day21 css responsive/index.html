@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media query </title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        .boxitems{
+            height: 200px;
+            width: 200px;
+            background-color: rgb(40, 74, 243);
+        }
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        }
+        @media only screen and (max-width: 600px){
+            body{
+                background-color: brown;
+            }
+            .box{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="boxitems"></div>
+        <div class="boxitems"></div>
+        <div class="boxitems"></div>
+        <div class="boxitems"></div>
+        <div class="boxitems"></div>
+        <div class="boxitems"></div>
+        <div class="boxitems"></div>
+        <div class="boxitems"></div>
+    </div>
+</body>
+</html>
