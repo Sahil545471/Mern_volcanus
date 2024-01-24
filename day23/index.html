@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: rgb(255, 72, 0);
+            animation-name: sahil;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            animation-delay: 3s;
+            position: relative;
+            border-width: 50px;
+            border-radius: 0%;
+            border-style: solid ;
+            border-color: white;
+        }
+        @keyframes sahil{
+            /* from{
+                background-color: yellow;
+            }
+            to{
+                background-color: rgb(42, 48, 165);
+                height: 200px;
+                width: 200px;
+            } */
+            0%{
+                background-color: white;
+                top: 0px;
+                left: 0px;
+                border-radius: 100%;
+            }
+            25%{
+                background-color: blue;
+                left: 400px;
+                top: 0px;
+                border-color: green;
+                border-radius: 10%;
+            }
+            50%{
+                background-color: chocolate;
+                top: 400px;
+                left: 400px;
+                border-color: purple;
+                border-radius: 30%;
+            }
+            75%{
+                background-color:black;
+                left: 0px;
+                top: 400px;
+                border-color: whitesmoke;
+                border-radius: 40%;
+            }
+            100%{
+                background-color: magenta;
+                left: 0px;
+                top: 0px;
+                border-color: cadetblue;
+                border-radius: 50%;
+            }
+        }
+        .box1{
+            border: 10px solid yellow;
+            height: 100px;
+            width: 500px;
+            box-sizing: border-box;
+        }
+        
+        .box2{
+            border: 10px solid yellow;
+            height: 100px;
+            width: 600px;
+            padding: 80px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, ullam sed voluptate autem itaque dignissimos atque ad fugit corporis nemo nulla reiciendis quae dicta dolorem soluta illo voluptatem voluptas iure!</p>
+    </div><br><br>
+ <div class="box2">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ullam vero dolorem quia possimus neque, non sit architecto velit dolore! Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+ </div>
+</body>
+</html>
