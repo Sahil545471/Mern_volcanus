@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 200px;
+            width: 200px;
+            position: relative;
+            left: 0;
+            transition: ease-in 2s;
+            }
+      button{
+        position: relative;
+        top: 30px;
+    }
+    #light,#dark{
+
+    }
+    </style>
+</head>
+<body>
+
+    <h1 style="margin: auto;">Welcome to my project</h1>
+    <button id="light"> Ligth </button>
+    <button id="dark"> dark </button>
+
+    <img src="https://img.freepik.com/free-vector/illustration-lord-hanuman-hanuman-jayanti-festival-card-background_1035-26550.jpg?t=st=1709360245~exp=1709363845~hmac=27641c13954113e5df07bfc4122328193f3bc04d5d2459043e42c02737c45a95&w=996" alt="">
+    <button id="move"> Move </button>
+<br><br><br><br>
+    <p>Number 1</p><input  type="text" id="num1">
+    <p>Number 2</p><input  type="text" id="num2">
+
+<button id="add">add</button>
+<button id="subtract">subtract</button>
+<button id="multiply">multiply</button>
+<button id="division">division</button>
+
+    <script>
+        document.querySelector('#move').addEventListener('click',() =>{
+    const image = document.querySelector('img')
+    image.style.left = "1000px" 
+})
+
+document.querySelector('#light').addEventListener('click',() =>{
+            document.querySelector("body").style.background = "white"
+            document.querySelector("body").style.color = "black"
+})
+
+
+document.querySelector('#dark').addEventListener('click',() =>{
+            document.querySelector("body").style.background = "black"
+            document.querySelector("body").style.color = "white"
+})
+
+
+document.querySelector('#add').addEventListener('click',() =>{
+    const num1 = parseInt(document.querySelector('#num1').value)
+    const num2 =  parseInt(document.querySelector('#num2').value)
+    console.log(num1,num2)
+   let sum = num1 + num2
+   let add = document.createElement('h2')
+    add.textContent = sum
+    document.querySelector('body').appendChild(add)
+})
+document.querySelector('#multiply').addEventListener('click',() =>{
+    const num1 = parseInt(document.querySelector('#num1').value)
+    const num2 =  parseInt(document.querySelector('#num2').value)
+    console.log(num1,num2)
+   let sum = num1 * num2
+   let add = document.createElement('h2')
+    add.textContent = sum
+    document.querySelector('body').appendChild(add)
+})
+document.querySelector('#subtract').addEventListener('click',() =>{
+    const num1 = parseInt(document.querySelector('#num1').value)
+    const num2 =  parseInt(document.querySelector('#num2').value)
+    console.log(num1,num2)
+   let sum = num1 - num2
+   let add = document.createElement('h2')
+    add.textContent = sum
+    add.style.top = "100px"
+    document.querySelector('body').appendChild(add)
+})
+document.querySelector('#division').addEventListener('click',() =>{
+    const num1 = parseInt(document.querySelector('#num1').value)
+    const num2 =  parseInt(document.querySelector('#num2').value)
+    console.log(num1,num2)
+   let sum = num1 / num2
+   let add = document.createElement('h2')
+    add.textContent = sum
+    add.style.top = "100px"
+    document.querySelector('body').appendChild(add)
+})
+    </script>
+</body>
+</html>

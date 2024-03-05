@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+   <h1>Visit Websites.com</h1>
+   <button class="b1">SetTimeout</button>
+   <button class="b2" >SetInterval</button>
+   <h1 class="time"></h1>
+<br>
+<br>
+<br>
+   Enter your domain <input type="text" class="input">
+   <input type="submit" class="btn" value="open">
+
+
+<script >
+
+document.querySelector(".btn").addEventListener("click", () => {
+    const inputval = document.querySelector('.input').value
+    console.log(inputval);
+    const url = `https://www.${inputval}.com`
+    const href = location.href
+
+    window.confirm(`are you sure you want to change page${url}`)
+    console.log(url)
+
+    if(window.confirm(`are you sure you want to change page${url}`))
+    {
+        location.assign(url)
+    }
+    else{
+            location.assign(href)
+    }
+})
+
+// document.querySelector(".b2").addEventListener("click")
+
+const timeout = setTimeout(() => {
+    document.querySelector(".time").innerHTML = "we are learning set timeout function"
+    
+},3000)
+document.querySelector(".b1").addEventListener("click")
+
+
+    </script>
+</body>
+</html>
