@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bom remianing methods</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn1">Set timeout</button>
+    <button id="btn2">Set interval</button>
+    <h1 class="time"></h1>
+    <script>
+
+        
+        document.querySelector("#btn1").addEventListener("click", () => {
+            setTimeout(() => {
+           document.querySelector(".time").innerHTML
+        //    = "This is out time out function" 
+           document.querySelector(".time").innerHTML
+           = localStorage.getItem('item') 
+        }, 2000)
+        })
+      
+        document.querySelector("#btn2").addEventListener("click", () => {
+            setInterval(() => {
+                const time = new Date();
+                document.querySelector(".time").innerHTML = `${time.toLocaleTimeString()}`
+            }, 1000);
+        })
+
+
+
+        const item = {
+            brandName: 'iphone',
+            model:'brand',
+            price:"10000"
+        }
+
+        localStorage.setItem(item,'brandName')
+
+
+
+    </script>
+
+</body>
+</html>
