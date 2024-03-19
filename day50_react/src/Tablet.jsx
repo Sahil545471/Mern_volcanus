@@ -1,0 +1,1 @@
+export const Tablet = () => <h1>This is export component </h1>
